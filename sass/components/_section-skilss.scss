@@ -1,0 +1,32 @@
+.skills {
+	padding-top: 89px;
+	padding-bottom: 0;
+	&__list {
+			display: flex;
+		}
+}
+.skills__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.skills__card {
+	@extend %flex;
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	background-color: $supporting-background-collor;
+	border-radius: 4px;
+}
+
+.skills__title {
+	color: $title-text-color;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.17;
+	text-transform: uppercase;
+}
+
+.skills__text {
+	max-width: 270px;
+	margin-top: 10px;
+}

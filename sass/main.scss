@@ -1,0 +1,21 @@
+
+@import"./utils/vars";
+@import "./utils/comons";
+@import"./components/header";
+@import"./components/section-hero";
+@import"./components/section-skilss";
+@import"./components/section-work";
+@import"./components/section-team";
+@import"./components/section-client";
+@import"./components/section-portfolio";
+@import"./components/section-modal";
+@import"./components/footer";
+
+body {
+	background-color: $white-color;
+	font-family: Roboto, sans-serif;
+	color: $primary-text-color;
+	letter-spacing: 0.03em;
+	font-size: 14px;
+	line-height: 1.71;
+}
