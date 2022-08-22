@@ -1,6 +1,14 @@
+.work {
+	display: none;
+	@media screen and (min-width: 1200px) {
+		display: block;
+	}
+}
 .work__list {
 	display: flex;
-	gap: 30px;
+		gap: 30px;
+	
+	
 }
 .work__item {
 	position: relative;

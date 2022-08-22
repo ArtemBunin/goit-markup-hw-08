@@ -1,7 +1,9 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
+padding-top: 118px;
+	padding-bottom: 118px;
   background-color: $background-collor-footer;
   background-image: linear-gradient(
       to right,
@@ -10,22 +12,35 @@
     ),
     url(../images/overlay\ img.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
+   text-align: center;
+@media screen and (min-width: 768px){
+	max-width: 768px;
+}
+@media screen and (min-width: 1200px){
+	max-width: 1600px;
+		padding-top: 200px;
+		padding-bottom: 200px;
+		
+}
+
 }
 
 .hero__title {
   color: $white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto;
+@media screen and (min-width: 1200px){
+	font-size: 44px;
+		line-height: 1.36;
+		max-width: 696px;
+}
 }
 
 .hero__button {

@@ -1,0 +1,133 @@
+.menu-container {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  height: 100vh;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  &.is-open {
+    display: block;
+  }
+  width: 100%;
+  background-color: $white-color;
+
+  @media screen and(min-width:767px) {
+    display: none;
+  }
+}
+.nav__button {
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 2;
+  color: $title-text-color;
+  &:active,
+  &:focus {
+    color: $accent-color;
+  }
+  & .icon-cross {
+    display: none;
+  }
+  & .icon-menu,
+  & .icon-cross {
+    fill: currentColor;
+  }
+  @media screen and(min-width:767px) {
+    display: none;
+  }
+}
+
+.nav__button.is-open .icon-cross {
+  display: block;
+}
+
+.nav__button.is-open .icon-menu {
+  display: none;
+}
+.mb-wraper {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	height: 100%;
+
+}
+.mb-nav__link {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.mb-nav__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.mb-contacts {
+	&__link{
+		color: $primary-text-color;
+			font-weight: 500;
+			font-size: 34px;
+			line-height: 1.17;
+			letter-spacing: 0.02em;
+			transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+					&:hover,
+			&:focus {
+				color: $accent-color;
+			}
+	}
+}
+.mb-networks {
+	display: flex;
+	margin-top: 64px;
+	&__link {
+			color: $primary-text-color;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 1.22;
+			letter-spacing: 0.02em;
+			transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+				&:hover,
+			&:focus {
+				color: $accent-color;
+			}
+		}
+}
+.mb-contacts__item {
+	&+.mb-contacts__item{
+margin-top: 32px;
+	}
+	
+}
+.mb-networks__link{
+	
+	color: $accent-color;
+		}
+.mb-networks__item:not(:last-child) {
+	position: relative;
+	margin-right: 20px;
+				}
+	
+		.mb-networks__item:not(:last-child)::after {
+		display: block;
+		content: " ";
+		width: 1px;
+		height: 100%;
+		background-color: $title-text-color;
+		border-radius: 1px;
+		position: absolute;
+		bottom: 0;
+		right: -10px;
+		
+	}
