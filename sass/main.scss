@@ -12,6 +12,7 @@
 @import"./components/footer";
 @import"./components/menu";
 body {
+	// overflow: hidden;
 	background-color: $white-color;
 	font-family: Roboto, sans-serif;
 	color: $primary-text-color;

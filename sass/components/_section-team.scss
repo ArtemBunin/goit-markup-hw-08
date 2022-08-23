@@ -1,31 +1,30 @@
 .team {
   background-color: #f5f4fa;
-&__list{
-	margin-top: 30px;
-	@media screen and (min-width: 768px){
-display: flex;
-flex-wrap: wrap;
-gap: 30px;
-	}
-}}
+  &__list {
+    margin-top: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+}
 
-.team__img {
-	max-width: 450px;
-	width: 100%;
-	@media screen and (min-width: 768px){
-		max-width: 354px;
-			width: 100%;
-	}
-		@media screen and (min-width: 1200px) {
-			max-width: 270px;
-				width: 100%;
-		}
+.team__item {
+  max-width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .team__item:not(:last-child) {
-	margin-bottom: 30px;
-	@media screen and (min-width: 1200px){
-		margin-bottom: 0px;
-	}
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 .worker {
   background-color: $white-color;
@@ -58,7 +57,7 @@ gap: 30px;
 }
 
 .network {
-	@extend %flex;
+  @extend %flex;
   padding-left: 32px;
   padding-right: 32px;
   margin-top: 16px;
@@ -67,8 +66,8 @@ gap: 30px;
   }
 }
 .network__link {
-	@extend %flex;
-   width: 44px;
+  @extend %flex;
+  width: 44px;
   height: 44px;
   border-radius: 50px;
   background-color: $white-color;

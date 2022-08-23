@@ -8,7 +8,8 @@
   padding-bottom: 48px;
   padding-top: 48px;
   &.is-open {
-    display: block;
+    display: flex;
+	flex-direction: column;
   }
   width: 100%;
   background-color: $white-color;
@@ -50,14 +51,7 @@
 .nav__button.is-open .icon-menu {
   display: none;
 }
-.mb-wraper {
-	
-	display: flex;
-	flex-direction: column;
-	justify-content:space-between;
-	height: 100%;
 
-}
 .mb-nav__link {
   color: $title-text-color;
   font-weight: 500;
@@ -71,10 +65,12 @@
   }
 }
 .mb-nav__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .mb-contacts {
+	margin-top: 20px;
+	margin-bottom: 64px;
 	&__link{
 		color: $primary-text-color;
 			font-weight: 500;
@@ -90,7 +86,7 @@
 }
 .mb-networks {
 	display: flex;
-	// margin-top: 64px;
+	
 	&__link {
 			color: $primary-text-color;
 			font-weight: 500;
