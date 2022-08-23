@@ -272,27 +272,49 @@
           <h2 class="caption-section">Чем мы занимаемся</h2>
           <ul class="work__list list">
             <li class="work__item">
-              <img
+             
+			  <picture>
+        <source 
+            srcset="./images/keyboard.jpg 1x, ./images/keyboard-2х.jpg 2x"
+            media="(min-width:1200px)">
+      
+         <img 
                 src="./images/keyboard.jpg"
                 alt="десктопные приложения"
                 width="370"
+				
               />
+      </picture>
+
               <p class="work__text">десктопные приложения</p>
             </li>
             <li class="work__item">
-              <img
+              <picture>
+			  <source 
+            srcset="./images/telephone.jpg 1x, ./images/telephone-2х.jpg 2x"
+            media="(min-width:1200px)">
+      
+          <img
                 src="./images/telephone.jpg"
                 alt="мобильные приложения"
                 width="370"
               />
+      </picture>
               <p class="work__text">мобильные приложения</p>
             </li>
             <li class="work__item">
-              <img
+             
+			   <picture>
+			  <source 
+            srcset="./images/planchet.jpg 1x, ./images/planchet-2х.jpg 2x"
+            media="(min-width:1200px)">
+      
+          <img
                 src="./images/planchet.jpg"
                 alt="дизайнерские решения"
                 width="370"
               />
+      </picture>
               <p class="work__text">дизайнерские решения</p>
             </li>
           </ul>
@@ -306,11 +328,24 @@
           <ul class="team__list list">
             <li class="team__item">
               <div class="worker">
-                <img class="team__img"
+               
+				<picture>
+        <source 
+		 srcset="./images/team/product.jpg 1x, ./images/team/product-2x.jpg 2x"
+         media="(min-width:1200px)">
+        <source 
+            srcset="./images/team/tablet/product.jpg 1x, ./images/team/tablet/product-2x.jpg 2x"
+            media="(min-width:768px)">
+        <source 
+           srcset="./images/team/mob/product.jpg 1x, ./images/team/mob/product-2x.jpg 2x"
+            media="(min-width:320px)">
+        <img class="team__img"
                   src="./images/team/product.jpg"
                   alt="фото product desinger "
                   width="270"
                 />
+      </picture>
+
                 <div class="worker__field">
                   <h3 class="worker__name">Игорь Демьяненко</h3>
                   <p class="worker__job">Product Designer</p>
@@ -358,11 +393,23 @@
 
             <li class="team__item">
               <div class="worker">
-                <img class="team__img"
+              
+						<picture>
+        <source 
+		 srcset="./images/team/frontend.jpg 1x, ./images/team/frontend-2x.jpg 2x"
+                   media="(min-width:1200px)">
+        <source 
+            srcset="./images/team/tablet/frontend.jpg 1x, ./images/team/tablet/frontend-2x.jpg 2x"
+            media="(min-width:768px)">
+        <source 
+                srcset="./images/team/mob/frontend.jpg 1x, ./images/team/mob/frontend-2x.jpg 2x"
+            media="(min-width:320px)">
+          <img class="team__img"
                   src="./images/team/frontend.jpg"
                   alt="фото Frontend Developer"
                   width="270"
                 />
+      </picture>
                 <div class="worker__field">
                   <h3 class="worker__name">Ольга Репина</h3>
                   <p class="worker__job">Frontend Developer</p>
@@ -409,11 +456,23 @@
             </li>
             <li class="team__item">
               <div class="worker">
-                <img class="team__img"
+            
+			<picture>
+        <source 
+		srcset="./images/team/marketing.jpg 1x, ./images/team/marketing-2x.jpg 2x"
+                   media="(min-width:1200px)">
+        <source 
+            srcset="./images/team/tablet/marketing.jpg 1x, ./images/team/tablet/marketing-2x.jpg 2x"
+            media="(min-width:768px)">
+        <source 
+          srcset="./images/team/mob/marketing.jpg 1x, ./images/team/mob/marketing-2x.jpg 2x"  
+            media="(min-width:320px)">
+             <img class="team__img"
                   src="./images/team/marketing.jpg"
                   alt="фото Marketing"
                   width="270"
                 />
+      </picture>
                 <div class="worker__field">
                   <h3 class="worker__name">Николай Тарасов</h3>
                   <p class="worker__job">Marketing</p>
@@ -460,11 +519,23 @@
             </li>
             <li class="team__item">
               <div class="worker">
-                <img class="team__img"
+              
+					<picture>
+        <source 
+		 srcset="./images/team/ui.jpg 1x, ./images/team/ui-2x.jpg 2x"
+         media="(min-width:1200px)">
+        <source 
+            srcset="./images/team/tablet/ui.jpg 1x, ./images/team/tablet/ui-2x.jpg 2x"
+            media="(min-width:768px)">
+        <source 
+            srcset="./images/team/mob/ui.jpg 1x, ./images/team/mob/ui-2x.jpg 2x"  
+            media="(min-width:320px)">
+              <img class="team__img"
                   src="./images/team/ui.jpg"
                   alt="фото UI desinger"
                   width="270"
                 />
+      </picture>
                 <div class="worker__field">
                   <h3 class="worker__name">Михаил Ермаков</h3>
                   <p class="worker__job">UI Designer</p>

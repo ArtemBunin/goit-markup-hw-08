@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- шапка страницы -->
-	<header class="page-header">
+    <header class="page-header">
       <div class="container page-header__container">
         <nav class="nav">
           <a href="./" class="logo"
@@ -70,34 +70,32 @@
                   >
                 </li>
               </ul>
-                <ul class="mb-networks list">
-                  <li class="mb-networks__item">
-                    <a class="mb-networks__link" href="#">Instagram</a>
-                  </li>
-                  <li class="mb-networks__item">
-                    <a class="mb-networks__link" href="#">Twitter</a>
-                  </li>
-                  <li class="mb-networks__item">
-                    <a class="mb-networks__link" href="#">Facebook</a>
-                  </li>
-                  <li class="mb-networks__item">
-                    <a class="mb-networks__link" href="#">LinkedIn</a>
-                  </li>
-                </ul>         
+              <ul class="mb-networks list">
+                <li class="mb-networks__item">
+                  <a class="mb-networks__link" href="#">Instagram</a>
+                </li>
+                <li class="mb-networks__item">
+                  <a class="mb-networks__link" href="#">Twitter</a>
+                </li>
+                <li class="mb-networks__item">
+                  <a class="mb-networks__link" href="#">Facebook</a>
+                </li>
+                <li class="mb-networks__item">
+                  <a class="mb-networks__link" href="#">LinkedIn</a>
+                </li>
+              </ul>
             </div>
-			   
-              
           </div>
           <!-- навигация по сайту -->
 
           <ul class="nav__list list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link "
-                >Студия
-              </a>
+              <a href="./index.html" class="nav__link">Студия </a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
+              <a href="./portfolio.html" class="nav__link nav__link--current"
+                >Портфолио</a
+              >
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">Контакты</a>
@@ -133,44 +131,55 @@
         <div class="container">
           <h1 class="visually-hidden">Наши работы</h1>
           <ul class="filter list">
-            <li class="filter__item"><button class="filter__btn" type="button">Все</button></li>
-            <li class="filter__item"><button class="filter__btn" type="button">Веб-сайты</button></li>
-            <li class="filter__item"><button class="filter__btn" type="button">Приложения</button></li>
-            <li class="filter__item"><button class="filter__btn" type="button">Дизайн</button></li>
-            <li class="filter__item"><button class="filter__btn" type="button">Маркетинг</button></li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Все</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Маркетинг</button>
+            </li>
           </ul>
           <ul class="project__list list">
             <li class="project__item">
               <a href="#" class="project__link">
                 <div class="project__overlay">
-                  <img class="project__img"
-                    src="./images/portfolio/laptop.jpg"
-                    alt="ноутбук"
-                    width="370"
-                  />
-                  <div class="project__thumb">
-                    <p class="project__description">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю
-                      получить исчерпывающие сведения о компании или частном
-                      лице.
-                    </p>
-                  </div>
-                </div>
-                <div class=" project__wraper">
-                  <h2 class="project__title">Технокряк</h2>
-                  <p class="project__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="project__item">
-              <a href="#" class="project__link">
-                <div class="project__overlay">
-                  <img class="project__img"
-                    src="./images/portfolio/basketballer.jpg"
-                    alt="два баскетболиста"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/laptop.jpg   1x,
+                        /images/portfolio/laptop-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        /images/portfolio/tablet/laptop.jpg   1x,
+                        images/portfolio/tablet/laptop-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/mob/laptop.jpg    1x,
+                        images/portfolio/mob/laptop-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/laptop.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__thumb">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -181,7 +190,56 @@
                   </div>
                 </div>
                 <div class="project__wraper">
-                  <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="project__title">Технокряк</h2>
+                  <p class="project__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="#" class="project__link">
+                <div class="project__overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/basketballer.jpg   1x,
+                        /images/portfolio/basketballer-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        /images/portfolio/tablet/basketballer.jpg   1x,
+                        images/portfolio/tablet/basketballer-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/mob/basketballer.jpg    1x,
+                        images/portfolio/mob/basketballer-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/basketballer.jpg"
+                      alt="два баскетболиста"
+                      width="370"
+                    />
+                  </picture>
+                  <div class="project__thumb">
+                    <p class="project__description">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__wraper">
+                  <h2 class="project__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="project__text">Дизайн</p>
                 </div>
               </a>
@@ -189,11 +247,35 @@
             <li class="project__item">
               <a href="#" class="project__link">
                 <div class="project__overlay">
-                  <img class="project__img"
-                    src="./images/portfolio/seafood.jpg"
-                    alt="рыба"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood.jpg   1x,
+                        /images/portfolio/seafood-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        /images/portfolio/tablet/seafood.jpg   1x,
+                        images/portfolio/tablet/seafood-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/mob/seafood.jpg    1x,
+                        images/portfolio/mob/seafood-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/seafood.jpg"
+                      alt="рыба"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__thumb">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -212,11 +294,35 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img class="project__img"
-                    src="./images/portfolio/headphones.jpg"
-                    alt="наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/headphones.jpg   1x,
+                        /images/portfolio/headphones-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        /images/portfolio/tablet/headphones.jpg   1x,
+                        images/portfolio/tablet/headphones-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/mob/headphones.jpg    1x,
+                        images/portfolio/mob/headphones-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/headphones.jpg"
+                      alt="наушники"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__thumb">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -235,11 +341,35 @@
             <li class="project__item">
               <a href="#" class="project__link">
                 <div class="project__overlay">
-                  <img class="project__img"
-                    src="./images/portfolio/boxes.jpg"
-                    alt="две коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes.jpg   1x,
+                        /images/portfolio/boxes-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        /images/portfolio/tablet/boxes.jpg   1x,
+                        images/portfolio/tablet/boxes-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/mob/boxes.jpg    1x,
+                        images/portfolio/mob/boxes-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/boxes.jpg"
+                      alt="две коробки"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__thumb">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -258,11 +388,35 @@
             <li class="project__item">
               <a href="#" class="project__link">
                 <div class="project__overlay">
-                  <img class="project__img"
-                    src="./images/portfolio/monitor.jpg"
-                    alt="монитор"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/monitor.jpg   1x,
+                        /images/portfolio/monitor-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        /images/portfolio/tablet/monitor.jpg   1x,
+                        images/portfolio/tablet/monitor-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/mob/monitor.jpg    1x,
+                        images/portfolio/mob/monitor-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/monitor.jpg"
+                      alt="монитор"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__thumb">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -281,11 +435,35 @@
             <li class="project__item">
               <a href="#" class="project__link">
                 <div class="project__overlay">
-                  <img class="project__img"
-                    src="./images/portfolio/magazine.jpg"
-                    alt="журнал"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/magazine.jpg   1x,
+                        /images/portfolio/magazine-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        /images/portfolio/tablet/magazine.jpg   1x,
+                        images/portfolio/tablet/magazine-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/mob/magazine.jpg    1x,
+                        images/portfolio/mob/magazine-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/magazine.jpg"
+                      alt="журнал"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__thumb">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -304,11 +482,35 @@
             <li class="project__item">
               <a href="#" class="project__link">
                 <div class="project__overlay">
-                  <img class="project__img"
-                    src="./images/portfolio/label.jpg"
-                    alt="ярлык"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/label.jpg   1x,
+                        /images/portfolio/label-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        /images/portfolio/tablet/label.jpg   1x,
+                        images/portfolio/tablet/label-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/mob/label.jpg    1x,
+                        images/portfolio/mob/label-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/label.jpg"
+                      alt="ярлык"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__thumb">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -327,11 +529,35 @@
             <li class="project__item">
               <a href="#" class="project__link">
                 <div class="project__overlay">
-                  <img class="project__img"
-                    src="./images/portfolio/hands.jpg"
-                    alt="руки на ноутбуке"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/hands.jpg   1x,
+                        /images/portfolio/hands-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        /images/portfolio/tablet/hands.jpg   1x,
+                        images/portfolio/tablet/hands-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/mob/hands.jpg    1x,
+                        images/portfolio/mob/hands-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/hands.jpg"
+                      alt="руки на ноутбуке"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__thumb">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -351,78 +577,102 @@
         </div>
       </section>
     </main>
-	<footer class="footer">
-		<div class="container footer__container">
-			<div class="footer__item">
-				<a href="./" class="logo logo--footer">Web<span class="logo__part logo__part--footer">Studio</span></a>
-				<address class="address">
-					<ul class="address__list list">
-						<li class="address__item">
-							<a class="address__link address__link--color " href="https://www.google.com.ua/maps/"
-								target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
-						</li>
-						<li class="address__item">
-							<a class="address__link" href="mailto:info@example.com">info@example.com</a><br />
-						</li>
-						<li class="address__item">
-							<a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
-						</li>
-					</ul>
-				</address>
-			</div>
-			<div class="join">
-				<p class="footer-title">присоединяйтесь</p>
-				<ul class="social list">
-					<li class="social__items">
-						<a href="" class="social__link" aria-label="instagram">
-							<svg class="social__icon" width="20px" height="20px">
-								<use href="./images/symbol-defs.svg#icon-instagram"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__items">
-						<a href="" class="social__link" aria-label="twitter">
-							<svg class="social__icon" width="20px" height="20px">
-								<use href="./images/symbol-defs.svg#icon-twitter"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__items">
-						<a href="" class="social__link">
-							<svg class="social__icon" width="20px" height="20px" aria-label="facebook">
-								<use href="./images/symbol-defs.svg#icon-facebook"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__items">
-						<a href="" class="social__link">
-							<svg class="social__icon" width="20px" height="20px" aria-label="linkedin">
-								<use href="./images/symbol-defs.svg#icon-linkedin"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</div>
-	
-			<div class="subscribe">
-				<p class="footer-title ">подпишитесь на рассылку</p>
-	
-				<form class="subscribe__form">
-					<label for="email-subscribe"></label>
-					<input class="subscribe__input" type="email" name="email" id="email-subscribe" placeholder="E-mail" />
-					<button class="subscribe__btn" type="submit">
-						Подписаться
-						<svg class="subscribe__icon" width="24px" height="24px">
-							<use href="./images/symbol-defs_2.svg#icon-send"></use>
-						</svg>
-					</button>
-				</form>
-	
-		</div>
-	
-	
-		</div>
-	</footer>
-	<script src="./mobile-menu.js"></script>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__item">
+          <a href="./" class="logo logo--footer"
+            >Web<span class="logo__part logo__part--footer">Studio</span></a
+          >
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
+                <a
+                  class="address__link address__link--color"
+                  href="https://www.google.com.ua/maps/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@example.com"
+                  >info@example.com</a
+                ><br />
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join">
+          <p class="footer-title">присоединяйтесь</p>
+          <ul class="social list">
+            <li class="social__items">
+              <a href="" class="social__link" aria-label="instagram">
+                <svg class="social__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__items">
+              <a href="" class="social__link" aria-label="twitter">
+                <svg class="social__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__items">
+              <a href="" class="social__link">
+                <svg
+                  class="social__icon"
+                  width="20px"
+                  height="20px"
+                  aria-label="facebook"
+                >
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__items">
+              <a href="" class="social__link">
+                <svg
+                  class="social__icon"
+                  width="20px"
+                  height="20px"
+                  aria-label="linkedin"
+                >
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subscribe">
+          <p class="footer-title">подпишитесь на рассылку</p>
+
+          <form class="subscribe__form">
+            <label for="email-subscribe"></label>
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              id="email-subscribe"
+              placeholder="E-mail"
+            />
+            <button class="subscribe__btn" type="submit">
+              Подписаться
+              <svg class="subscribe__icon" width="24px" height="24px">
+                <use href="./images/symbol-defs_2.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
