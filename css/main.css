@@ -1127,8 +1127,7 @@ a {
 @media screen and (min-width: 1200px) {
   .subscribe__input {
     margin-bottom: 0px;
-    max-width: 358px;
-    width: 100%;
+    width: 358px;
   }
 }
 
